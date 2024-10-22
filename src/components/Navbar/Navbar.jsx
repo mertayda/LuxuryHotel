@@ -3,6 +3,7 @@ import hotel1 from "../../assets/FirstPageImages/hotel1.jpg";
 import hotel2 from "../../assets/FirstPageImages/hotel2.jpg";
 import hotel3 from "../../assets/FirstPageImages/hotel3.jpg";
 import nature1 from "../../assets/FirstPageImages/nature1.jpg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,8 +30,10 @@ const Navbar = () => {
           )}
           {!isMenuOpen && "MENU"}
         </button>
-        <h1 className="text-lg md:text-xl italic">QELLI</h1>
-        {!isMenuOpen && <button className="text-xs md:text-sm">BOOK NOW</button>}
+        <h1 className="text-lg md:text-xl italic">JOUEL</h1>
+        {!isMenuOpen && (
+          <button className="text-xs md:text-sm">BOOK NOW</button>
+        )}
       </div>
 
       {isMenuOpen && (
@@ -39,22 +42,68 @@ const Navbar = () => {
             <button onClick={toggleMenu} className="text-2xl md:text-3xl">
               ×
             </button>
-            <h1 className="text-lg md:text-xl text-center mx-auto font-thin">QELLI</h1>
+            <h1 className="text-lg md:text-xl text-center mx-auto font-thin">
+              JOUEL
+            </h1>
           </div>
           <div className="relative h-[calc(100vh-64px)] md:h-[calc(100vh-80px)]">
             <ul className="absolute inset-0 flex flex-col justify-center items-center space-y-3 md:space-y-4 text-xl md:text-3xl font-thin">
-              <li><a href="#" className="hover:underline">Accommodation</a></li>
-              <li><a href="#" className="hover:underline">Relaxation Services</a></li>
-              <li><a href="#" className="hover:underline">Tour packages</a></li>
-              <li><a href="#" className="hover:underline">Discover Qelli</a></li>
-              <li><a href="#" className="hover:underline">Online check-in</a></li>
-              <li><a href="#" className="hover:underline">Book now</a></li>
-              <li><a href="#" className="hover:underline">Connect with us</a></li>
+              <li>
+                <Link to="/accommodation" className="hover:underline">
+                  Accommodation
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:underline">
+                  Relaxation Services
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:underline">
+                  Tour packages
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:underline">
+                  Discover JOUEL
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:underline">
+                  Online check-in
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:underline">
+                  Book now
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:underline">
+                  Connect with us
+                </Link>
+              </li>
             </ul>
-            <img src={hotel1} alt="Hotel 1" className="absolute top-4 left-4 md:top-10 md:left-10 w-24 h-24 md:w-48 md:h-48 object-contain" />
-            <img src={hotel2} alt="Hotel 2" className="absolute top-4 right-4 md:top-10 md:right-10 w-24 h-24 md:w-48 md:h-48 object-contain" />
-            <img src={hotel3} alt="Hotel 3" className="absolute bottom-4 left-4 md:bottom-10 md:left-20 w-24 h-24 md:w-48 md:h-48 object-contain" />
-            <img src={nature1} alt="Nature 1" className="absolute bottom-4 right-4 md:bottom-10 md:right-20 w-24 h-24 md:w-48 md:h-48 object-contain" />
+            <img
+              src={hotel1}
+              alt="Hotel 1"
+              className="absolute top-4 left-4 md:top-10 md:left-10 w-24 h-24 md:w-48 md:h-48 object-contain"
+            />
+            <img
+              src={hotel2}
+              alt="Hotel 2"
+              className="absolute top-4 right-4 md:top-10 md:right-10 w-24 h-24 md:w-48 md:h-48 object-contain"
+            />
+            <img
+              src={hotel3}
+              alt="Hotel 3"
+              className="absolute bottom-4 left-4 md:bottom-10 md:left-20 w-24 h-24 md:w-48 md:h-48 object-contain"
+            />
+            <img
+              src={nature1}
+              alt="Nature 1"
+              className="absolute bottom-4 right-4 md:bottom-10 md:right-20 w-24 h-24 md:w-48 md:h-48 object-contain"
+            />
           </div>
         </div>
       )}
