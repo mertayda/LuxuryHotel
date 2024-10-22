@@ -53,18 +53,9 @@ const Navbar = () => {
                   Accommodation
                 </Link>
               </li>
+
               <li>
-                <Link href="#" className="hover:underline">
-                  Relaxation Services
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:underline">
-                  Tour packages
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:underline">
+                <Link to="/discover" className="hover:underline">
                   Discover JOUEL
                 </Link>
               </li>

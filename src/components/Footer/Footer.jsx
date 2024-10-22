@@ -3,14 +3,14 @@ import { ArrowRight } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12 px-4 md:px-6 lg:px-8">
+    <footer className="bg-gray-900 text-white py-12 px-4 md:px-6 lg:px-8 font-helvetica">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start">
         <div className="mb-8 md:mb-0">
-          <h2 className="text-3xl font-serif">QELLI</h2>
+          <h2 className="text-3xl  font-carmorat">JOUEL</h2>
         </div>
 
         <div className="mb-8 md:mb-0">
-          <h3 className="text-lg font-semibold mb-4">
+          <h3 className="text-lg font-semibold mb-4 font-carmorat">
             Subscribe to our newsletter
           </h3>
           <div className="flex">
@@ -27,7 +27,9 @@ const Footer = () => {
 
         <div className="flex flex-col sm:flex-row gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-lg font-semibold mb-4 font-carmorat">
+              Services
+            </h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="hover:underline">
@@ -47,7 +49,9 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
+            <h3 className="text-lg font-semibold mb-4 font-carmorat">
+              Company
+            </h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="hover:underline">

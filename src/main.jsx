@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import "./index.css";
 import Home from "./pages/Home/Home.jsx";
 import Accommodation from "./pages/Accommodation/Accommodation.jsx";
+import Discover from "./pages/Discover/Discover.jsx";
 
 const rooter = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const rooter = createBrowserRouter([
   {
     path: "/accommodation",
     element: <Accommodation />,
+  },
+  {
+    path: "/discover",
+    element: <Discover />,
   },
 ]);
 
